@@ -1,7 +1,7 @@
-# Railway hosted Chainlit app
+# Railway-hosted Chainlit app w/ memory 💾
 
 
-# 1. run locally
+# 1. 💻 run locally
 1. install chainlit from my minimal-change fork
 ```sh
 pip install git+https://github.com/guyvandam/chainlit.git#subdirectory=backend/
@@ -24,7 +24,7 @@ if __name__ == "__main__":
     run_chainlit(__file__)
 ```
 
-# 2. deploy w/ memory
+# 2. 🚄 deploy w/ memory
 1. create a new railway project w/ a postgres DB service
 2. create the DB table by setting
 ```
