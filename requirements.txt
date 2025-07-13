@@ -1,0 +1,4 @@
+python-dotenv
+pydantic==2.10.1
+asyncpg
+anthropic
