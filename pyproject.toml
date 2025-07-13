@@ -1,0 +1,10 @@
+[project]
+name = "railway-hosted-chainlit-w-memory-1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.57.1",
+    "asyncpg>=0.30.0",
+]

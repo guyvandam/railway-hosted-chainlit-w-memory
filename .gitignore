@@ -6,3 +6,12 @@
 
 # Node modules.
 node_modules/
+
+
+# Chainlit
+.chainlit/
+.files/
+
+# cache
+__pycache__/
+

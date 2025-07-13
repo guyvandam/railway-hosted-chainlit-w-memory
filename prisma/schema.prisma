@@ -20,7 +20,7 @@ model Element {
 
     threadId  String?
     stepId    String
-    metadata  Json
+    metadata  Json     @default("{}")
     mime      String?
     name      String
     objectKey String?
@@ -43,7 +43,7 @@ model User {
     id         String   @id @default(dbgenerated("gen_random_uuid()"))
     createdAt  DateTime @default(now())
     updatedAt  DateTime @default(now()) @updatedAt
-    metadata   Json
+    metadata   Json    @default("{}")
     identifier String
     threads    Thread[]
 
@@ -79,7 +79,7 @@ model Step {
     threadId  String?
 
     input     String?
-    metadata  Json
+    metadata  Json     @default("{}")
     name      String?
     output    String?
     type      StepType
@@ -112,8 +112,8 @@ model Thread {
     deletedAt DateTime?
 
     name     String?
-    metadata Json
-    tags     String[] @default([])
+    metadata Json      @default("{}")
+    tags     String[]
 
     elements Element[]
     userId   String?
