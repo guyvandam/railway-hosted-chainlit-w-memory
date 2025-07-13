@@ -40,5 +40,5 @@ to create the tables needed for chainlit.
 3. deploy to railway
 w/ the modified `Dockerfile` from [this](https://railway.com/deploy/atS4DW?referralCode=jk_FgY) template.
 The modification is for installing chainlit from my minimal-change fork.
-4. add the env variables, notice to create a reference env variable
+4. add the env variables - make sure to create a reference env variable
 `DATABASE_URL` from the DB service `DATABASE_PUBLIC_URL`
